@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary My Love❤️</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-pink': '#FFC0CB', // Light Pink
+                        'secondary-red': '#DC143C', // Crimson
+                        'text-dark': '#333333',
+                        'bg-light': '#FFF0F5', // Lavender Blush
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        cursive: ['Dancing Script', 'cursive'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s ease-out',
+                        'heart-beat': 'heartBeat 1.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        heartBeat: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+        body {
+
+            background: linear-gradient(135deg, #FFDAB9 0%, #FFC0CB 100%);
+            
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .card {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.85);
+            /* Slightly transparent white */
+        }
+
+        /* Canvas for the particle effect */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            /* Allows clicks to pass through */
+        }
+
+        /* Styling for the media container */
+        .media-container {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        /* Responsive grid for media */
+        @media (min-width: 768px) {
+            .media-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+    <!-- Canvas for the flower/heart particle effect -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Main Content Card (Z-index 10 to be above the canvas) -->
+    <main
+        class="card relative z-10 w-full max-w-4xl p-6 md:p-10 rounded-3xl border-4 border-secondary-red/50 transform transition-all duration-300 hover:shadow-xl">
+
+        <!-- Animated Main Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl md:text-7xl font-cursive text-secondary-red animate-fade-in-up">
+                Happy Anniversary To Us Babe, These 2 Years Have Been A Roller-coster, And I'd Do It Again With You By My Side.
+            </h1>
+            <p class="text-xl md:text-2xl mt-4 text-text-dark/80 animate-fade-in-up" style="animation-delay: 0.5s;">
+                You're the best thing that has happened to me and i appreciate having you in my life sthandwa sami.
+                When i count my blessings, i count you twice. Ngiyakuthanda kakhulu!
+            </p>
+            <div class="mt-4 animate-heart-beat">
+                <svg class="mx-auto w-12 h-12 text-secondary-red" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-4 4a1 1 0 000 1.414l4 4a1 1 0 001.414-1.414L8.414 11H14a1 1 0 100-2H8.414l2.293-2.293z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </header>
+
+        
+        <section class="mb-8 border-b-2 border-primary-pink/50 pb-4">
+            <h2 class="text-3xl font-bold text-text-dark mb-4 text-center">These Are Some Of My Favourite Moments We've
+                Had Together.
+            </h2>
+
+        </section>
+
+        
+        <div class="media-container">
+
+            
+            <div class="bg-primary-pink/20 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-secondary-red">OUR FIRST DATE, I LITERALLY HAD BUTTERFLIES IN
+                    MY STOMACH</h3>
+                <img src="OUR FIRST DATE .jpg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+Loading+Error';"
+                    alt="A beautiful photo of us at the beach."
+                    class="w-full h-auto rounded-lg border-2 border-white">
+                <p class="text-sm mt-2 text-text-dark italic">This Day Is So Memorable Simply Because It Was Our First
+                    Date Out, And It's One Of The Only Times I Saw You That Holiday.</p>
+            </div>
+
+            
+            <div class="bg-primary-pink/20 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-secondary-red">A Day I Felt Very Emotionally Attached To You
+                </h3>
+                <img src="quality time .jpg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/DC143C/FFFFFF?text=Image+Loading+Error';"
+                    alt="A silly selfie we took in the city."
+                    class="w-full h-auto rounded-lg border-2 border-white">
+                <p class="text-sm mt-2 text-text-dark italic">The Music And The Affection Literally Made It Feel Like
+                    Our Souls Were Spending Quality Time Together.</menu>
+                </p>
+            </div>
+
+            
+            <div
+                class="md:col-span-2 bg-secondary-red/20 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-secondary-red text-center">Can't Wait For The Kids To See These In The Archives.</h3>
+                <!-- IMPORTANT: Replace the iframe content below with your video embed code. -->
+                <!-- Example YouTube Embed (Adjust width/height and src): -->
+                <div class="w-full h-auto rounded-lg border-2 border-white">
+                    <iframe width="100%" height="400" src="video for the kids .mp4"
+                        title="Special video for the kids" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        class="w-full h-full rounded-lg">
+                    </iframe>
+                </div>
+                <p class="text-sm mt-2 text-text-dark italic text-center">
+                </p>
+            </div>
+
+            
+            <div class="bg-primary-pink/20 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-secondary-red">Our Best Picture Together</h3>
+                <img src="sthandwa sami.jpg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFDAB9/333333?text=Image+Loading+Error';"
+                    alt="A picture representing our future dreams."
+                    class="w-full h-auto rounded-lg border-2 border-white">
+                <p class="text-sm mt-2 text-text-dark italic">I'm Sure You Also Can't Forget About This Day. Introducing
+                    You To My Family Felt Really Good.</p>
+            </div>
+
+            <div class="bg-primary-pink/20 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-secondary-red">Our Oldest Picture Together</h3>
+                <img src="oldest picture together .jpg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/F08080/FFFFFF?text=Image+Loading+Error';"
+                    alt="A random favorite picture."
+                    class="w-full h-auto rounded-lg border-2 border-white">
+                <p class="text-sm mt-2 text-text-dark italic">O'break Was Fun, I Remember We Went Out Twice And We Did
+                    Have A Good Thing Going On, But I Was Too Young To Understand That My Wife Was Right Infront Of Me.</p>
+            </div>
+
+        </div>
+
+        <footer class="mt-12 pt-6 border-t-2 border-primary-pink/50 text-center">
+            <p class="text-lg md:text-xl text-text-dark">
+               Two years is a really long time babe, and this millestone is very important to me. I appreciate having you in my life, and i cant wait to spend the rest of my life with you ❤️.
+               Ngiyakuthanda Babe.
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- Confetti/Particle Effect Logic ---
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let W, H;
+
+        
+        function resizeCanvas() {
+            W = window.innerWidth;
+            H = window.innerHeight;
+            canvas.width = W;
+            canvas.height = H;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * W;
+                this.y = -10; // Start slightly above the top
+                this.size = Math.random() * 8 + 4; // Size between 4 and 12
+                this.speedX = Math.random() * 1.5 - 0.75; // Horizontal sway
+                this.speedY = Math.random() * 2 + 1; // Vertical speed
+                this.rotation = Math.random() * 360; // Initial rotation
+                this.rotationSpeed = Math.random() * 0.1 - 0.05; // Spin speed
+                this.color = Math.random() < 0.5 ? '#DC143C' : '#FFC0CB'; // Red or Pink
+                this.shape = Math.random() < 0.6 ? 'heart' : 'circle'; // More hearts than circles
+            }
+
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.rotation * Math.PI / 180);
+
+                ctx.fillStyle = this.color;
+
+                if (this.shape === 'heart') {
+                    // Simple heart shape drawing
+                    ctx.beginPath();
+                    ctx.moveTo(0, 0);
+                    ctx.bezierCurveTo(this.size, -this.size * 2, this.size * 2, -this.size, 0, this.size);
+                    ctx.bezierCurveTo(-this.size * 2, -this.size, -this.size, -this.size * 2, 0, 0);
+                    ctx.fill();
+                } else {
+                    // Simple circle (like a falling flower petal)
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                ctx.restore();
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.rotation += this.rotationSpeed;
+
+                // Reset particle when it falls off the bottom
+                if (this.y > H + this.size) {
+                    this.y = -this.size;
+                    this.x = Math.random() * W;
+                }
+            }
+        }
+
+        
+        function initParticles() {
+            for (let i = 0; i < 50; i++) { // 50 particles for a gentle effect
+                particles.push(new Particle());
+            }
+        }
+
+        
+        function animate() {
+            // Clear canvas with slight transparency for a subtle trailing effect
+            ctx.clearRect(0, 0, W, H);
+
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        
+        window.onload = function () {
+            initParticles();
+            animate();
+        }
+    </script>
+</body>
+
+</html>
